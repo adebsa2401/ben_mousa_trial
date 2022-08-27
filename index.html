@@ -12,12 +12,23 @@
     <h1 id = "title">freeCodeCamp Survey Form</h1>
     <p id = "description">Thank you for taking the time to help us improve the platform</p>
     <form id = "survey-form">
-    <input type = "text" id = "name">
-    <input type = "email" id = "email">
-    <input type = "number" id = "number" min = 0 max = 100>
-    
-    
-      </form>
+      <label id="name-label" for="name">Name</label>
+    <input type = "text" id = "name" placeholder="Enter your name"/>
+    <label id="email-label" for="email">Email</label>
+    <input type = "email" id = "email" placeholder="Enter your email" />
+    <label id="number-label" for="number">Age (optional)</label>
+    <input type = "number" id = "number" min = 0 max = 100 placeholder="Age" />
+    <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown" type="dropdown">
+      <option>Student</option>
+      <option>Full time Job</option>
+      <option>Full time learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+    <input id="submit" type="submit" />
+          </form>
+
     <!--
 
     Hello Camper!
@@ -30,7 +41,6 @@
     - The freeCodeCamp Team
 
     -->
-    Hello World, we are software developers!
     <script  src="js/index.js"></script>
   </body>
 </html>
